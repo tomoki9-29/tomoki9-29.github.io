@@ -1,9 +1,303 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-    </head>
-    <body>
-        aaaaaa
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpg" href="img/favicon.jpg">
+    <link href='//fonts.googleapis.com/css?family=Raleway:500,400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font/LigatureSymbols/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+    <script src="js/product.js"></script>
+    <script>
+    $(function(){
+        $('a[href^=#]').click(function(){
+            var speed = 500;
+            var href= $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $("html, body").animate({scrollTop:position}, speed, "swing");
+            return false;
+        });
+    });
+    </script>
+    <title>Youichi Hiraga's portfolio</title>
+</head>
+<body>
+    <div class="l-wrapper">
+        <a id="home"></a>
+        <div class="l-header">
+            <div class="l-constrained-large clearfix">
+                <div class="h-logo pull-left">
+                    <p class="title">Youichi Hiraga's portfolio</p>
+                </div>
+                <div class="h-menu pull-right">
+                    <ul class="h-menu clearfix">
+                        <li class="pull-left"><a href="#home" class="lsf-icon" title="home">Home</a></li>
+                        <li class="pull-left"><a href="#profile" class="lsf-icon" title="user">Profile</a></li>
+                        <li class="pull-left"><a href="#works" class="lsf-icon" title="code">Works</a></li>
+                        <li class="pull-left"><a href="#contact" class="lsf-icon" title="mail">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="l-marketing">
+            <div class="marketing-container">
+                <h1>Youichi Hiraga's portfolio</h1>
+                <p>Haxe and PHP engineer.</p>
+                <div class="separator-white"></div>
+                <ul class="menu">
+                    <li><a href="#home" class="lsf-icon" title="home">Home</a></li>
+                    <li><a href="#profile" class="lsf-icon" title="user">Profile</a></li>
+                    <li><a href="#works" class="lsf-icon" title="code">Works</a></li>
+                    <li><a href="#contact" class="lsf-icon" title="mail">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="l-main">
+            <a id="profile"></a>
+            <div class="section l-constrained">
+                <h1 class="section-title lsf-icon" title="user">Profile</h1>
+                <div class="section-content clearfix">
+                    <div class="profile-icon pull-left">
+                        <img src="img/profile-icon.jpg" class="icon-large" alt="">
+                    </div>
+                    <div class="profile-content pull-left">
+                        <div class="subsection">
+                        <h1>自己紹介</h1>
+                            はじめまして。私は平賀陽一(<a href="https://github.com/musou1500">@musou1500</a>)と申します。<br />
+                            高校生の頃からプログラミングを学び始め、今は主にWeb系のことをやっています。<br />
+                            言語はPHPを使用することが多いですが、Haxeという言語も大好きで、<br />
+                            少しながらコンパイラやIDEの開発にも貢献しています。
+                        </div>
+                        <div class="subsection">
+                        <h1>よく使用する技術 &amp; ソフトウェア</h1>
+                            <ul class="tech clearfix">
+                                <li class="pull-left"><img src="img/haxe-logo.png" alt=""></li>
+                                <li class="pull-left"><img src="img/fuelphp-logo.png" alt=""></li>
+                                <li class="pull-left"><img src="img/laravel-logo.png" alt=""></li>
+                                <li class="pull-left"><img src="img/mysql-logo.png" alt=""></li>
+                                <li class="pull-left"><img src="img/vim-logo.png" alt=""></li>
+                                <li class="pull-left"><img src="img/brackets-logo.png" alt=""></li>
+                                <li class="pull-left"><img src="img/octocat.png" alt=""></li>
+                                <li class="pull-left"><img src="img/jquery-logo.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="works"></a>
+            <div class="section l-constrained">
+                <h1 class="section-title lsf-icon" title="code">Works</h1>
+                <div class="section-content clearfix">
+                    <div class="subsection">
+                        <p style="text-align:center;">今まで私が開発に携わったものです。<br />画像をクリックすると詳細が表示されます</p>
+                    </div>
+                    <div class="subsection">
+                        <ul class="products horizontal-list clearfix">
+                            <li class="pull-left"><a href="javascript:void(0);" style="background-image:url('img/works/portfolio-thumb.png');" class="portfolio"></a></li>
+                            <li class="pull-left"><a href="javascript:void(0);" style="background-image:url('img/works/dollars-thumb.png');" class="dollars"></a></li>
+                            <li class="pull-left"><a href="javascript:void(0);" style="background-image:url('img/works/prprprop-thumb.png');" class="prprprop"></a></li>
+                            <li class="pull-left"><a href="javascript:void(0);" style="background-image:url('img/works/knknknit-thumb.png');" class="knknknit"></a></li>
+                            <li class="pull-left"><a href="javascript:void(0);" style="background-image:url('img/works/exc-thumb.png');" class="exc"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-product product-portfolio">
+                <div class="l-constrained">
+                    <h1 class="section-title">Portfolio site</h1>
+                    <div class="section-content">
+                        <ul class="product-info">
+                            <li class="clearfix">
+                                <p class="field pull-left">URL</p>
+                                <p class="description pull-left"><a href="https://musou1500.github.io/" target="_blank">https://musou1500.github.io/</a></p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">ソースコード</p>
+                                <p class="description pull-left"><a href="https://github.com/musou1500/musou1500.github.io" target="_blank">https://github.com/musou1500/musou1500.github.io</a></p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">説明</p>
+                                <p class="description pull-left">
+                                    このサイトです。「Works」で画像をクリックすると詳細を表示する動きなどはHaxeで組み、javascriptに変換して使っています。
+                                </p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">使用した技術</p>
+                                <div class="description pull-left">
+                                    <ul class="tech clearfix">
+                                        <li class="pull-left"><img src="img/octocat.png" alt=""></li>
+                                        <li class="pull-left"><img src="img/haxe-logo.png" alt=""></li>
+                                        <li class="pull-left"><img src="img/html5-logo.png" alt=""></li>
+                                        <li class="pull-left"><img src="img/jquery-logo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-product product-dollars">
+                <div class="l-constrained">
+                    <h1 class="section-title">DOLLARS</h1>
+                    <div class="section-content">
+                        <ul class="product-info">
+                            <li class="clearfix">
+                                <p class="field pull-left">URL</p>
+                                <p class="description pull-left">非公開</p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">ソースコード</p>
+                                <p class="description pull-left"><a href="http://dollars-sns.net" target="_blank">http://dollars-sns.net</a></p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">説明</p>
+                                <p class="description pull-left">
+                                    アニメ作品に登場する架空のSNSを再現したものです。<br />
+                                    「OpenPNE」というSNSエンジンをカスタマイズして運用しており、<br />
+                                    2015年6月16時点での会員数は17009人です。<br />
+                                    現在はFuelPHPを用いて開発した新バージョンの運用・開発も行っています。<br />
+                                </p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">使用した技術</p>
+                                <div class="description pull-left">
+                                    <ul class="tech clearfix">
+                                        <li class="pull-left"><img src="img/octocat.png" alt=""></li>
+                                        <li class="pull-left"><img src="img/openpne-logo.png" alt=""></li>
+                                        <li class="pull-left"><img src="img/fuelphp-logo.png" alt=""></li>
+                                        <li class="pull-left"><img src="img/haxe-logo.png" alt=""></li>
+                                        <li class="pull-left"><img src="img/mysql-logo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-product product-prprprop">
+                <div class="l-constrained">
+                    <h1 class="section-title">Jubeat prop風背景アニメーション</h1>
+                    <div class="section-content">
+                        <ul class="product-info">
+                            <li class="clearfix">
+                                <p class="field pull-left">URL</p>
+                                <p class="description pull-left"><a href="http://legacy.dollars-sns.net/static/products/prprProp" target="_blank">http://legacy.dollars-sns.net/static/products/prprProp</a></p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">ソースコード</p>
+                                <p class="description pull-left"><a href="https://github.com/musou1500/prprProp" target="_blank">https://github.com/musou1500/prprProp</a></p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">説明</p>
+                                <p class="description pull-left">
+                                    音楽シミュレーションゲーム「Jubeat prop」の背景で再生されているアニメーションを再現したものです。<br />
+                                    オイルタイマーのような動きを実装しています。
+                                </p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">使用した技術</p>
+                                <div class="description pull-left">
+                                    <ul class="tech clearfix">
+                                        <li class="pull-left"><img src="img/octocat.png" alt=""></li>
+                                        <li class="pull-left"><img src="img/haxe-logo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-product product-knknknit">
+                <div class="l-constrained">
+                    <h1 class="section-title">Jubeat knit風背景アニメーション</h1>
+                    <div class="section-content">
+                        <ul class="product-info">
+                            <li class="clearfix">
+                                <p class="field pull-left">URL</p>
+                                <p class="description pull-left"><a href="http://legacy.dollars-sns.net/static/products/knknKnit" target="_blank">http://legacy.dollars-sns.net/static/products/knknKnit</a></p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">ソースコード</p>
+                                <p class="description pull-left"><a href="https://github.com/musou1500/knknKnit" target="_blank">https://github.com/musou1500/knknKnit</a></p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">説明</p>
+                                <p class="description pull-left">
+                                    音楽シミュレーションゲーム「Jubeat knit」の背景で再生されているアニメーションを再現したものです。<br />
+                                    こちらは何をモチーフにしているか分からなかったのですが、それらしい動きが再現出来ました。
+                                </p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">使用した技術</p>
+                                <div class="description pull-left">
+                                    <ul class="tech clearfix">
+                                        <li class="pull-left"><img src="img/octocat.png" alt=""></li>
+                                        <li class="pull-left"><img src="img/haxe-logo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-product product-exc">
+                <div class="l-constrained">
+                    <h1 class="section-title">Jubeat prop風 EXCELLENTエフェクト</h1>
+                    <div class="section-content">
+                        <ul class="product-info">
+                            <li class="clearfix">
+                                <p class="field pull-left">URL</p>
+                                <p class="description pull-left"><a href="https://www.youtube.com/watch?v=AW6KJwX9I6c" target="_blank">https://www.youtube.com/watch?v=AW6KJwX9I6c</a></p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">ソースコード</p>
+                                <p class="description pull-left">ソースコードはありません。</p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">説明</p>
+                                <p class="description pull-left">
+                                    音楽シミュレーションゲーム「Jubeat prop」の一部で使用されていたエフェクトを再現したものです。<br />
+                                    動画編集ソフト「After Effects」を使用しました。<br />
+                                    また、他にも「Jubeat prop」風の素材をいくつか制作しています。<br />
+                                    <a href="https://drive.google.com/folderview?id=0B4EN7QMCpsJRTzRsZ3JjQjJHRTQ&usp=sharing">作った素材</a>
+                                </p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="field pull-left">使用した技術</p>
+                                <div class="description pull-left">
+                                    <ul class="tech clearfix">
+                                        <li class="pull-left"><img src="img/ae-logo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a id="contact"></a>
+            <div class="section section-contact">
+                <div class="l-constrained">
+                    <h1 class="section-title lsf-icon" title="mail">Contact</h1>
+                    <div class="section-content clearfix">
+                        <div class="subsection">
+                            <input type="text" class="text-email" value="phper1500@gmail.com" readonly="readonly" />
+                        </div>
+                        <div class="subsection">
+                            <p style="font-size:30px;">or</p>
+                        </div>
+                        <div class="subsection">
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/musou1500" class="lsf facebook" target="_blank">facebook</a></li>
+                                <li><a href="https://github.com/musou1500" class="lsf github" target="_blank">github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
